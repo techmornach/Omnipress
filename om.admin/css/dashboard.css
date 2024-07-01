@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.dashboard-nav {
+    width: 20%;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+}
+
+.dashboard-nav h2 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.dashboard-main {
+    width: 80%;
+}
+
+.dashboard-header {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px groove gray;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.dashboard-header p {
+    font-size: 25px;
+}
+
+.dashboard-header button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.dashboard-menu-dropdown {
+    position: absolute;
+    right: 10px;
+    bottom: -25px;
+    z-index: 100;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.234);
+    font-size: 18px;
+}
+
+.dashboard-menu-dropdown ul {
+    list-style: none;
+}
+
+.dashboard-menu-dropdown .dropdown-item {
+    display: block;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 15px;
+}
+
+.dashboard-menu-dropdown .dropdown-item:hover {
+    background-color: rgb(208, 203, 203);
+}
+
+.dashboard-menu-dropdown-hidden {
+    display: none;
+}
